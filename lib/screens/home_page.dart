@@ -65,7 +65,6 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(builder: (context) {
                       return FamilyMembersPage();
                     }));
-                    print('family member tapped');
                   },
                 ),
                 Category(
@@ -77,7 +76,6 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(builder: (context) {
                       return NumbersPage();
                     }));
-                    print('numbers tapped');
                   },
                 ),
               ],
@@ -94,19 +92,17 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(builder: (context) {
                       return ColorsPage();
                     }));
-                    print('colors tapped');
                   },
                 ),
                 Category(
                   Color(0xff7C3FA0),
-                  'Greetings',
+                  'Greetings And More',
                   Icons.speaker_notes,
                   () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
                       return PhrasesPage();
                     }));
-                    print('phrases tapped');
                   },
                 ),
               ],

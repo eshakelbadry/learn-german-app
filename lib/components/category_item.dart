@@ -16,7 +16,7 @@ class Category extends StatelessWidget {
         height: 130,
         width: 155,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(25), bottomRight: Radius.circular(25)),
             color: color),
 
@@ -30,7 +30,7 @@ class Category extends StatelessWidget {
             ),
             Text(
               text!,
-              style: TextStyle(color: Colors.white, fontSize: 18),
+              style:const TextStyle(color: Colors.white, fontSize: 18),
             ),
           ],
         ),

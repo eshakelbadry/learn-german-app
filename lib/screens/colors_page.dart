@@ -9,7 +9,7 @@ class ColorsPage extends StatelessWidget {
   }) : super(key: key);
 
   final List<Item> colors = const [
-    Item(
+     Item(
       colorType: Colors.white,
       sound: 'white.wav',
       geName: 'Weiß',
@@ -75,7 +75,7 @@ class ColorsPage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 22, 67, 129),
-        title: Text(
+        title:const Text(
           'Colors',
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
@@ -85,7 +85,7 @@ class ColorsPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return ColorsListItem(
             colorsItem: colors[index],
-            color: Color.fromARGB(255, 22, 67, 129),
+            color:const Color.fromARGB(255, 22, 67, 129),
             itemType: 'colors',
           );
         },

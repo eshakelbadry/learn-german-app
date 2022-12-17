@@ -204,8 +204,8 @@ class NumbersPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color(0xffF6952F),
-        title: Text('Numbers',
+        backgroundColor:const Color(0xffF6952F),
+        title: const Text('Numbers',
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
       ),
       body: ListView.builder(
@@ -213,7 +213,7 @@ class NumbersPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListItem(
             item: numbers[index],
-            color: Color(0xffF6952F),
+            color:const Color(0xffF6952F),
             itemType: 'numbers',
           );
         },

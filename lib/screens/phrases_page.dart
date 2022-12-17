@@ -76,7 +76,7 @@ class PhrasesPage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Color(0xff7C3FA0),
-        title: Text('Phrases',
+        title: const Text('Phrases',
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
       ),
       // backgroundColor: Color.fromARGB(255, 6, 157, 199),
@@ -85,7 +85,7 @@ class PhrasesPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return PhraseItem(
             phrase: phrases[index],
-            color: Color(0xff7C3FA0),
+            color: const Color(0xff7C3FA0),
             itemType: 'phrases',
           );
         },

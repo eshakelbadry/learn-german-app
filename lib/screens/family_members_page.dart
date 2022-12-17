@@ -65,14 +65,14 @@ class FamilyMembersPage extends StatelessWidget {
       appBar: AppBar(
           centerTitle: true,
           backgroundColor: Color(0xff527F30),
-          title: Text('Family Members',
+          title:const Text('Family Members',
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold))),
       body: ListView.builder(
         itemCount: familyMembers.length,
         itemBuilder: (context, index) {
           return ListItem(
             item: familyMembers[index],
-            color: Color(0xff527F30),
+            color:const Color(0xff527F30),
             itemType: 'family_members',
           );
         },

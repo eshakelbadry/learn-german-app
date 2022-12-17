@@ -14,11 +14,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       // backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 1, 48, 57),
+        backgroundColor: const Color.fromARGB(255, 1, 48, 57),
         elevation: 0,
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration:const BoxDecoration(
           gradient: LinearGradient(
             colors: [
               Color.fromARGB(255, 1, 48, 57),
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
               height: 90,
               width: 300,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                  borderRadius:const BorderRadius.only(
                       topLeft: Radius.circular(25),
                       bottomRight: Radius.circular(25)),
                   color: Colors.red.shade900),
@@ -62,24 +62,24 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Category(
-                  Color(0xff527F30),
+                 const Color(0xff527F30),
                   'Family Members',
                   Icons.family_restroom_outlined,
                   () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return FamilyMembersPage();
+                      return const FamilyMembersPage();
                     }));
                   },
                 ),
                 Category(
-                  Color(0xffF6952F),
+                 const Color(0xffF6952F),
                   'Numbers',
                   Icons.format_list_numbered_rtl_rounded,
                   () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return NumbersPage();
+                      return const NumbersPage();
                     }));
                   },
                 ),
@@ -92,18 +92,18 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Category(
-                  Color.fromARGB(255, 22, 67, 129),
+                 const Color.fromARGB(255, 22, 67, 129),
                   'Colors',
                   Icons.color_lens_rounded,
                   () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return ColorsPage();
+                      return const ColorsPage();
                     }));
                   },
                 ),
                 Category(
-                  Color(0xff7C3FA0),
+                 const Color(0xff7C3FA0),
                   'Greetings',
                   Icons.speaker_notes,
                   () {

@@ -44,7 +44,7 @@ class ColorsListItem extends StatelessWidget {
                         colorsItem.geName,
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       ),
-                      SizedBox(
+                    const  SizedBox(
                         height: 5,
                       ),
                       Text(
@@ -54,7 +54,7 @@ class ColorsListItem extends StatelessWidget {
                     ],
                   ),
                 ),
-                Spacer(
+               const Spacer(
                   flex: 1,
                 ),
                 IconButton(
@@ -63,7 +63,7 @@ class ColorsListItem extends StatelessWidget {
                         AudioCache(prefix: 'assets/sounds/$itemType/');
                     player.play(colorsItem.sound);
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.play_arrow,
                     color: Colors.white,
                   ),
@@ -72,7 +72,7 @@ class ColorsListItem extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+       const SizedBox(
           height: 10,
         )
       ],

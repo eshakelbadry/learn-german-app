@@ -29,7 +29,7 @@ class ListItem extends StatelessWidget {
                 Container(
                     height: 100,
                     width: 100,
-                    color: Color(0xffFEF3D7),
+                    color: const Color(0xffFEF3D7),
                     child: Image.asset(item.image!)),
                 Padding(
                   padding: const EdgeInsets.only(left: 16),
@@ -39,19 +39,19 @@ class ListItem extends StatelessWidget {
                     children: [
                       Text(
                         item.geName,
-                        style: TextStyle(fontSize: 18, color: Colors.white),
+                        style:const TextStyle(fontSize: 18, color: Colors.white),
                       ),
-                      SizedBox(
+                     const SizedBox(
                         height: 5,
                       ),
                       Text(
                         item.enName,
-                        style: TextStyle(fontSize: 18, color: Colors.black),
+                        style: const TextStyle(fontSize: 18, color: Colors.black),
                       ),
                     ],
                   ),
                 ),
-                Spacer(
+              const  Spacer(
                   flex: 1,
                 ),
                 IconButton(
@@ -61,10 +61,10 @@ class ListItem extends StatelessWidget {
                           AudioCache(prefix: 'assets/sounds/$itemType/');
                       player.play(item.sound);
                     } catch (ex) {
-                      print(ex);
+                   print(ex);
                     }
                   },
-                  icon: Icon(
+                  icon:const Icon(
                     Icons.play_arrow,
                     color: Colors.white,
                   ),
@@ -73,7 +73,7 @@ class ListItem extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+       const SizedBox(
           height: 10,
         )
       ],

@@ -19,7 +19,7 @@ class PhraseItem extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 30),
+          padding:const EdgeInsets.symmetric(horizontal: 30),
           height: 80,
           color: color,
           child: Row(
@@ -32,17 +32,17 @@ class PhraseItem extends StatelessWidget {
                   children: [
                     Text(
                       phrase.geName,
-                      style: TextStyle(
+                      style:const TextStyle(
                         color: Colors.white,
                         fontSize: 18,
                       ),
                     ),
-                    SizedBox(
+                   const SizedBox(
                       height: 5,
                     ),
                     Text(
                       phrase.enName,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.black,
                         fontSize: 18,
                       ),
@@ -50,7 +50,7 @@ class PhraseItem extends StatelessWidget {
                   ],
                 ),
               ),
-              Spacer(
+             const Spacer(
                 flex: 1,
               ),
               IconButton(
@@ -63,7 +63,7 @@ class PhraseItem extends StatelessWidget {
                     print(ex);
                   }
                 },
-                icon: Icon(
+                icon:const Icon(
                   Icons.play_arrow,
                   color: Colors.white,
                   size: 28,
@@ -72,7 +72,7 @@ class PhraseItem extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+       const SizedBox(
           height: 10,
         )
       ],

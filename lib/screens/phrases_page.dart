@@ -19,7 +19,7 @@ class PhrasesPage extends StatelessWidget {
       enName: 'Good Morning!',
     ),
     Item(
-      sound: 'good_day1.mp3',
+      sound: 'good_day.mp3',
       geName: 'Guten Tag!',
       enName: 'Good day!',
     ),

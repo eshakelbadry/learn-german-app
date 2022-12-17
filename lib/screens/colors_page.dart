@@ -48,9 +48,9 @@ class ColorsPage extends StatelessWidget {
         enName: 'Yellow'),
     Item(
         colorType: Colors.grey,
-        sound: 'gray.wav',
+        sound: 'grey.wav',
         geName: 'Grau',
-        enName: 'Gray'),
+        enName: 'Grey'),
     Item(
         colorType: Colors.orange,
         sound: 'orange.wav',

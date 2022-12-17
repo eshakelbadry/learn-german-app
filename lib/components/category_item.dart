@@ -13,22 +13,24 @@ class Category extends StatelessWidget {
       child: Container(
         // padding: EdgeInsets.only(left: 20),
         // alignment: Alignment.centerLeft,
-        height: 140,
-        width: 200,
+        height: 130,
+        width: 155,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(25), color: color),
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(25), bottomRight: Radius.circular(25)),
+            color: color),
 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Icon(
               icon!,
-              size: 50,
+              size: 45,
               color: Colors.white,
             ),
             Text(
               text!,
-              style: TextStyle(color: Colors.white, fontSize: 20),
+              style: TextStyle(color: Colors.white, fontSize: 18),
             ),
           ],
         ),

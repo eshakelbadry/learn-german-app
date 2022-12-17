@@ -221,15 +221,15 @@ class NumbersPage extends StatelessWidget {
     );
   }
 
-  List<Widget> getList(List<Item> numbers) {
-    List<ListItem> itemsList = [];
-    for (int i = 0; i < numbers.length; i++) {
-      itemsList.add(ListItem(
-        item: numbers[i],
-        color: Color(0xffF6952F),
-        itemType: 'numbers',
-      ));
-    }
-    return itemsList;
-  }
+  // List<Widget> getList(List<Item> numbers) {
+  //   List<ListItem> itemsList = [];
+  //   for (int i = 0; i < numbers.length; i++) {
+  //     itemsList.add(ListItem(
+  //       item: numbers[i],
+  //       color: Color(0xffF6952F),
+  //       itemType: 'numbers',
+  //     ));
+  //   }
+  //   return itemsList;
+  // }
 }

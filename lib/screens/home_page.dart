@@ -30,13 +30,15 @@ class HomePage extends StatelessWidget {
           ),
         ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          // mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Container(
-              height: 100,
-              width: 400,
+              height: 90,
+              width: 300,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(25),
+                      bottomRight: Radius.circular(25)),
                   color: Colors.red.shade900),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -52,6 +54,9 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            const SizedBox(
+              height: 60,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -80,6 +85,9 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(
+              height: 35,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -96,7 +104,7 @@ class HomePage extends StatelessWidget {
                 ),
                 Category(
                   Color(0xff7C3FA0),
-                  'Greetings And More',
+                  'Greetings',
                   Icons.speaker_notes,
                   () {
                     Navigator.push(context,
